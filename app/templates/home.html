@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="hgfhgfh">
+    <meta name="author" content="fghfdh">
+
+    <title>Python tutor</title>
+
+    <link href="/static/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav>
+      <ul class="logo">
+        <li class="logo"><a href="http://www.fit.vutbr.cz/">
+          <img style="padding: 0px 0px 0px 0px;" src="/static/fit_logo.jpg" width="auto" height="100">
+            </a>
+        </li>
+     </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Python tutor</h1>
+    </div>
+
+    <div class="container">
+      <h2>Zadaj súbor</h2>
+    <form method=POST action="" enctype=multipart/form-data>
+      Login: <input type="text" name="fname"><br>
+      <p><input type=file name=file>
+      <input type=submit value=Upload>
+
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-danger" role="alert">{{ message }}
+            </div>     
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+    </form>
+    </div>
+  </body>
+
+</html<

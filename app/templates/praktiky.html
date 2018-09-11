@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="hgfhgfh">
+    <meta name="author" content="fghfdh">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <title>Python tutor</title>
+
+    <link href="/static/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav>
+      <ul class="logo">
+        <li class="logo"><a href="http://www.fit.vutbr.cz/">
+          <img style="padding: 0px 0px 0px 0px;" src="/static/fit_logo.jpg" width="auto" height="100">
+            </a>
+        </li>
+     </ul>
+    </nav>
+
+    <div class="container-button">
+      <a href="{{ url_for('logout') }}"><button type="button" class="button">Testovať ďalší súbor</button></a>
+    </div>
+
+    <div class="container-button">
+      <a href="{{ url_for('eval', name=session['login']) }}"><button type="button" class="button">Naspäť</button></a>
+    </div>
+
+    <div class="container">
+      <h1>Praktiky kódu</h1>
+    </div>
+
+    <div class="container-code">
+      <pre class="prettyprint linenums">{{source}}</pre>
+    </div>
+
+    <div class="container-popis">
+      <table style="width:100%">
+        <tr>
+          <th>Line</th>
+          <th>Popis chyby</th>
+        </tr>
+        {% for item in result %}
+          {% if item %}
+            <tr>
+              <td>{% for i in item[1:] %}{{i}}, {% endfor %}</td>
+              <td>{{item[0]}}</td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </div>
+
+  </body>
+
+</html<

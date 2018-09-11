@@ -1,0 +1,240 @@
+ul.logo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1aa3ff;
+}
+
+li.logo {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li.logo a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.logo a:hover {
+    background-color: #66c2ff;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.container {
+    margin: 80px 80px 80px 80px;
+    float: center;
+    padding: 0px 450px 0px 450px;
+    text-align: center;
+}
+
+.container-button {
+    margin: 0px 0px 00px 0px;
+    padding: 10px 0px 0px 0px;
+    text-align: left;
+}
+
+.container-code {
+    float: left;
+    width: 60%;
+}
+
+.container-popis {
+    float: right;
+    width: 39%;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  float: center;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  float: center;
+}
+
+.dingbat-success {
+    color: green;
+    font-size: 30px;
+}
+
+.dingbat-fail {
+    color: red;
+    font-size: 30px;
+}
+
+.button {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #4c91cd;
+}
+
+.linenums li {
+    list-style-type: decimal;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+ol.linenums{
+    counter-reset:linenumber;
+}
+ol.linenums li{
+    list-style-type:none;
+    counter-increment:linenumber;
+}
+ol.linenums li:before{
+    content: counter(linenumber);
+    float:left;
+    margin-left:-4em;
+    text-align:right;
+    width:3em;
+}
+
+table th {
+    background-color: #1aa3ff;
+    color: white;
+}
+
+<!-- PEP8 REPORT -->
+
+html, body {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #223366;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 > small {
+    font-size: 50%;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+a {
+    color: #536c97;
+}
+
+a:visited {
+    color: #536c97;
+}
+
+a:active, a:hover {
+    color: #7e99cf;
+}
+
+tr, th, td {
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table > thead > tr > th {
+    padding: 15px 5px 15px 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #666;
+}
+
+table > tbody > tr > td {
+    padding: 5px;
+}
+
+table > tbody > tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+table > tbody > tr:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+.fill {
+    width: 100%;
+}
+
+.left {
+    width: 80%;
+    float: left;
+}
+
+.right {
+    width: 20%;
+    float: right;
+    padding-left: 25px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+#build-messages {
+    display: none;
+}
+
+<!-- /PEP8 REPORT -->
